@@ -1,0 +1,15 @@
+fusion_final:
+  ros__parameters:
+    pose_topic: "/localization/pose_twist_fusion_filter/biased_pose_with_covariance_gnss"
+    twist_topic: "/localization/pose_twist_fusion_filter/twist_with_covariance"
+    lidar_pose_topic: "/localization/pose_twist_fusion_filter/biased_pose_with_covariance_lidar"
+    lidar_twist_topic: "/localization/pose_twist_fusion_filter/twist_with_covariance"
+    output_pose_topic: "/localization/pose_with_covariance"
+    output_twist_topic: "/localization/pose_twist_fusion_filter/twist_with_covariance"
+    output_kinematic_state_topic: "/localization/pose_twist_fusion_filter/kinematic_state"
+    output_biased_pose_topic: "/localization/pose_twist_fusion_filter/biased_pose_with_covariance"
+    gnss_pose_weight: 0.5
+    lidar_pose_weight: 0.5
+    gnss_twist_weight: 0.5
+    lidar_twist_weight: 0.5
+    speed_threshold: 0.833 # 3 km/h
